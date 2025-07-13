@@ -257,4 +257,13 @@
         </nav>
         <p class="u-custom-font u-font-lato u-text u-text-default u-text-2"> © 2025 Sagvox. All rights reserved.</p>
       </div></footer>
+	  <script>
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY;
+  document.querySelector('.background-shapes::before');
+  const bg = document.querySelector('.background-shapes');
+  bg.style.transform = `translateY(${scrollY * 0.1}px)`;
+});
+</script>
+
 </body></html>
