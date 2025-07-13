@@ -1304,3 +1304,57 @@
   z-index: 1;
 }
 
+/* Before/After comparison styles */
+.before-after {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  gap: 0;
+}
+
+.before-after .col {
+  flex: 1 1 300px;
+  padding: 2rem;
+}
+
+.before-after .without {
+  background: #f4f4f4;
+}
+
+.before-after .with {
+  background: #eaf8f1;
+}
+
+.before-after h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.before-after ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.before-after li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.before-after .list-icon {
+  width: 36px;
+  height: 36px;
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .before-after {
+    flex-direction: column;
+  }
+}
+
