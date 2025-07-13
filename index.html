@@ -155,16 +155,6 @@
         <p class="u-align-center u-custom-font u-font-lato u-text u-text-29"> Stop juggling. Start growing.</p>
         <a href="mailto:hello@sagvox.com" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-4 u-custom-font u-font-lato u-hover-custom-color-3 u-radius u-text-hover-black u-btn-1"> Start Your Project</a>
       </div>
-	    <div class="wave-background">
-  <svg class="wave-layer wave-1" viewBox="0 0 1440 320" preserveAspectRatio="none">
-    <path fill="#2b7ff7" fill-opacity="0.2" d="M0,192L80,186.7C160,181,320,171,480,154.7C640,139,800,117,960,122.7C1120,128,1280,160,1360,176L1440,192L1440,320L0,320Z"></path>
-  </svg>
-  <svg class="wave-layer wave-2" viewBox="0 0 1440 320" preserveAspectRatio="none">
-    <path fill="#00c5b4" fill-opacity="0.15" d="M0,224L80,218.7C160,213,320,203,480,186.7C640,171,800,149,960,154.7C1120,160,1280,192,1360,208L1440,224L1440,320L0,320Z"></path>
-  </svg>
-  <svg class="wave-layer wave-3" viewBox="0 0 1440 320" preserveAspectRatio="none">
-    <path fill="#ffffff" fill-opacity="0.05" d="M0,256L80,250.7C160,245,320,235,480,218.7C640,203,800,181,960,186.7C1120,192,1280,224,1360,240L1440,256L1440,320L0,320Z"></path>
-  </svg>
 </div>
 
 
@@ -269,21 +259,4 @@
         </nav>
         <p class="u-custom-font u-font-lato u-text u-text-default u-text-2"> © 2025 Sagvox. All rights reserved.</p>
       </div></footer>
-	  <script>
-window.addEventListener('scroll', () => {
-  const section = document.querySelector('#OurServices');
-  const rect = section.getBoundingClientRect();
-  const windowHeight = window.innerHeight;
-
-  if (rect.top < windowHeight && rect.bottom > 0) {
-    const progress = 1 - rect.top / windowHeight;
-
-    section.querySelector('.wave-1').style.transform = `translateX(${progress * 30}px)`;
-    section.querySelector('.wave-2').style.transform = `translateX(${progress * 60}px)`;
-    section.querySelector('.wave-3').style.transform = `translateX(${progress * 90}px)`;
-  }
-});
-</script>
-
-
 </body></html>
