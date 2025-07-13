@@ -1275,3 +1275,31 @@
     width: 340px;
   }
 }
+.dynamic-background {
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.dynamic-background::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 200%;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(43, 127, 247, 0.1) 0%,
+    rgba(0, 197, 180, 0.2) 50%,
+    rgba(43, 127, 247, 0.1) 100%
+  );
+  background-size: 100% 200%;
+  background-position: 0 var(--bg-position, 0%);
+  z-index: 0;
+  pointer-events: none;
+  transition: background-position 0.2s ease-out;
+}
+
+.dynamic-background .u-sheet-1 {
+  position: relative;
+  z-index: 1;
+}
+
