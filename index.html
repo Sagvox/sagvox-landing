@@ -268,4 +268,23 @@
         </nav>
         <p class="u-custom-font u-font-lato u-text u-text-default u-text-2"> © 2025 Sagvox. All rights reserved.</p>
       </div></footer>
+	  <script>
+window.addEventListener('scroll', () => {
+  const section = document.querySelector('#OurServices');
+  const wave = section.querySelector('.wave-background');
+
+  const rect = section.getBoundingClientRect();
+  const windowHeight = window.innerHeight;
+
+  // Only trigger when section is in view
+  if (rect.top < windowHeight && rect.bottom > 0) {
+    const scrollProgress = 1 - rect.top / windowHeight;
+    const moveX = scrollProgress * 50;  // adjust movement scale
+    const moveY = scrollProgress * 10;
+
+    wave.style.transform = `translate(${moveX}px, ${moveY}px)`;
+  }
+});
+</script>
+
 </body></html>
